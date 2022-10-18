@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-synacor"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "jsx": true,
+    "modules": true
+  },
+	"globals": {
+		"mount": "readonly",
+		"shallow": "readonly"
+	},
+  "rules": {
+    "indent": ["warn", 2],
+    "no-undef": "error",
+    "no-console": "off",
+    "no-unused-vars": "warn",
+    "curly": "warn",
+    "brace-style": "off",
+    "arrow-body-style": "off",
+    "new-cap": "off",
+    "object-shorthand": ["warn", "properties"],
+    "comma-dangle": ["warn", {
+      "arrays": "only-multiline",
+      "objects": "only-multiline",
+      "imports": "only-multiline",
+      "exports": "only-multiline",
+      "functions": "only-multiline"
+    }]
+  }
+}

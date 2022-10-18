@@ -1,0 +1,22 @@
+{
+  "name": "preact-express-template",
+  "description": "This app does one little thing, and does it well.",
+  "scripts": {},
+  "env": {
+    "HEROKU_APP_NAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
